@@ -34,5 +34,6 @@ func prompOptions (b bill) {
 func main () {
 	mybill := createBill()
 	prompOptions(mybill)
+	
 	fmt.Println(mybill)
 }
