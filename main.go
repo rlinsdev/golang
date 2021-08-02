@@ -34,7 +34,7 @@ func prompOptions (b bill) {
 
 	case "a":
 		name, _ := getInput("Item Name: ", reader)
-		price, _ := getInput("item Price", reader)
+		price, _ := getInput("Item Price: ", reader)
 		
 		p, err := strconv.ParseFloat(price, 64)
 		if err!=nil {
@@ -57,9 +57,11 @@ func prompOptions (b bill) {
 
 		b.updateTip(t)
 		fmt.Println("Tip added: ", tip)
+		prompOptions(b)
 
 	case "s":
-		fmt.Println("You choose to save the bill", b)
+		b.save()
+		fmt.Println("You Saved the file - ", b.name)
 
 	default:
 		fmt.Println("That is not a valid option...")

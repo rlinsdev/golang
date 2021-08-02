@@ -1,0 +1,5 @@
+Bill Breakdown: 
+coffe:                    ...$3.6 
+milk:                     ...$4.32 
+tip:                      ...$3
+total:                    ...$10.92
